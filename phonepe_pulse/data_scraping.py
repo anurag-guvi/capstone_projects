@@ -165,7 +165,7 @@ for root, dir, files in os.walk(pulse_main_dir_path):
     if not files == []:
         data_type = root.split("data")[1].split("\\")[1]
         country = root.split("country")[1].split("\\")[1]
-        if False and root.__contains__('transaction') and root.__contains__('aggregated'):
+        if root.__contains__('transaction') and root.__contains__('aggregated'):
             if root.__contains__('state'):
                 state = root.split("state")[1].split("\\")[1]
             else:
